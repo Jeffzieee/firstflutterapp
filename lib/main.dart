@@ -14,7 +14,7 @@ class firstflutterapp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.blue,
       ),
-      home: homescreen()
+      home: homescreen(),
     );
   }
 }
@@ -26,7 +26,18 @@ class homescreen extends StatelessWidget {
   Widget build(BuildContext context){
     return Scaffold(
       backgroundColor: Colors.green,
-      appBar : AppBar(backgroundColor: Colors.black,)
+      appBar : AppBar(backgroundColor: Colors.black,),
+      body: SafeArea(
+        child: Container(
+          child: const Center(
+            child: Text("jeffzieee",
+              style: TextStyle(fontSize: 50,
+                fontWeight: FontWeight.bold
+              ),
+            )
+          )
+        )
+      )
     );
   }
 }
